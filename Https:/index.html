@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDITOR ZX — SUBSCRIPTION PLANS</title>
+<style>
+  * { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+  body { background-color: #0b0f19; color: #ffffff; margin: 0; padding: 20px 15px; }
+  .container { max-width: 500px; margin: auto; }
+  
+  .header { text-align: center; padding: 20px 0; }
+  .header h1 { font-size: 2.2rem; margin: 0 0 10px 0; letter-spacing: 1px; color: #ffffff; }
+  .header h2 { font-size: 1.4rem; margin: 0 0 10px 0; color: #38bdf8; letter-spacing: 2px; }
+  .header p { color: #94a3b8; font-size: 0.95rem; margin: 0; }
+  
+  .plan-card {
+    background: #111827;
+    border-radius: 20px;
+    padding: 25px 20px;
+    margin-bottom: 25px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  }
+  
+  /* Plan Color Borders */
+  .basic-card { border: 2px solid #22c55e; }
+  .premium-card { border: 2px solid #3b82f6; }
+  .pro-card { border: 2px solid #f97316; }
+  .ultra-card { border: 2px solid #a855f7; }
+
+  .plan-title { display: flex; align-items: center; gap: 10px; font-size: 1.4rem; font-weight: bold; margin-bottom: 10px; }
+  .dot { width: 16px; height: 16px; border-radius: 50%; display: inline-block; }
+  
+  .price { font-size: 2.2rem; font-weight: 800; margin: 5px 0; }
+  .validity { color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px; }
+  
+  .services-list { list-style: none; padding: 0; margin: 0 0 15px 0; color: #cbd5e1; font-size: 1rem; }
+  .services-list li { margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+  
+  .description { color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.4; }
+  
+  .btn-container { display: flex; flex-direction: column; gap: 10px; }
+
+  .btn-pay {
+    display: block;
+    width: 100%;
+    background: #38bdf8;
+    color: #ffffff;
+    text-align: center;
+    padding: 13px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+  }
+
+  .btn-telegram {
+    display: block;
+    width: 100%;
+    background: #0088cc;
+    color: #ffffff;
+    text-align: center;
+    padding: 13px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 136, 204, 0.3);
+  }
+
+  /* PAYMENT BOX STYLING */
+  .payment-box {
+    background: #111827;
+    border: 2px dashed #38bdf8;
+    border-radius: 20px;
+    padding: 25px 20px;
+    text-align: center;
+    margin-top: 35px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  }
+  .qr-img { 
+    width: 230px; 
+    height: 230px; 
+    border-radius: 16px; 
+    margin: 20px auto; 
+    display: block;
+    background: #ffffff; 
+    padding: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  
+  <div class="header">
+    <h1>🚀 EDITOR ZX</h1>
+    <h2>SUBSCRIPTION PLANS</h2>
+    <p>Professional Editing Service — Choose Your Plan</p>
+  </div>
+
+  <!-- BASIC PLAN -->
+  <div class="plan-card basic-card">
+    <div class="plan-title"><span class="dot" style="background:#22c55e;"></span> BASIC</div>
+    <div class="price">₹7,000</div>
+    <div class="validity">12 Days • 1 Edit/Day</div>
+    <ul class="services-list">
+      <li>🎬 Video / Reel Editing</li>
+    </ul>
+    <div class="description">हर दिन 1 Video या Reel edit करवा सकते हैं।</div>
+    <div class="btn-container">
+      <a href="#payment-section" class="btn-pay">💳 SCAN & PAY NOW</a>
+      <a href="Https://t.me/zx9a9" target="_blank" class="btn-telegram">📢 JOIN TELEGRAM CHANNEL</a>
+    </div>
+  </div>
+
+  <!-- PREMIUM PLAN -->
+  <div class="plan-card premium-card">
+    <div class="plan-title"><span class="dot" style="background:#3b82f6;"></span> PREMIUM</div>
+    <div class="price">₹15,000</div>
+    <div class="validity">15 Days • 2 Edits/Day</div>
+    <ul class="services-list">
+      <li>🎬 Video / Reel Editing</li>
+      <li>🖼️ Thumbnail Design</li>
+    </ul>
+    <div class="description">रोज़ 2 eligible edits करवा सकते हैं।</div>
+    <div class="btn-container">
+      <a href="#payment-section" class="btn-pay">💳 SCAN & PAY NOW</a>
+      <a href="Https://t.me/zx9a9" target="_blank" class="btn-telegram">📢 JOIN TELEGRAM CHANNEL</a>
+    </div>
+  </div>
+
+  <!-- PRO PLAN -->
+  <div class="plan-card pro-card">
+    <div class="plan-title"><span class="dot" style="background:#f97316;"></span> PRO</div>
+    <div class="price">₹20,000</div>
+    <div class="validity">26 Days • 3 Edits/Day</div>
+    <ul class="services-list">
+      <li>🎬 Video / Reel Editing</li>
+      <li>🖼️ Thumbnail Design</li>
+      <li>📸 Photo Editing</li>
+    </ul>
+    <div class="description">रोज़ 3 eligible edits करवा सकते हैं।</div>
+    <div class="btn-container">
+      <a href="#payment-section" class="btn-pay">💳 SCAN & PAY NOW</a>
+      <a href="Https://t.me/zx9a9" target="_blank" class="btn-telegram">📢 JOIN TELEGRAM CHANNEL</a>
+    </div>
+  </div>
+
+  <!-- ULTRA PLAN -->
+  <div class="plan-card ultra-card">
+    <div class="plan-title"><span class="dot" style="background:#a855f7;"></span> ULTRA</div>
+    <div class="price">₹25,000</div>
+    <div class="validity">46 Days • 5 Edits/Day</div>
+    <ul class="services-list">
+      <li>🎬 Video / Reel Editing</li>
+      <li>🖼️ Thumbnail Design</li>
+      <li>📸 Photo Editing</li>
+      <li>🎨 Poster & Instagram Post Design</li>
+      <li>📱 Social Media Creatives</li>
+      <li>⚡ Priority Editing Support</li>
+    </ul>
+    <div class="description">रोज़ 5 eligible edits करवा सकते हैं।</div>
+    <div class="btn-container">
+      <a href="#payment-section" class="btn-pay">💳 SCAN & PAY NOW</a>
+      <a href="Https://t.me/zx9a9" target="_blank" class="btn-telegram">📢 JOIN TELEGRAM CHANNEL</a>
+    </div>
+  </div>
+
+  <!-- PAYMENT & TELEGRAM SCREENSHOT SECTION -->
+  <div class="payment-box" id="payment-section">
+    <h3 style="color:#38bdf8; margin-top:0; font-size:1.4rem;">💳 SCAN TO PAY</h3>
+    <p style="color:#94a3b8; font-size:0.95rem;">किसी भी UPI App (PhonePe / GPay / Paytm / FamPay) से स्कैन करके पे करें:</p>
+    
+    <!-- QR Code Image -->
+    <img src="qr.png" alt="Payment QR Code" class="qr-img">
+    
+    <p style="color:#22c55e; font-weight:bold; margin-top:15px; margin-bottom:15px; font-size:0.95rem;">
+      ✅ पेमेंट करने के बाद ScreenShot अपने नाम के साथ Telegram पर भेजें:
+    </p>
+
+    <a href="Https://t.me/zx9a9" target="_blank" class="btn-telegram" style="background:#22c55e;">
+      📲 SEND SCREENSHOT ON TELEGRAM
+    </a>
+  </div>
+
+</div>
+
+</body>
+</html>
